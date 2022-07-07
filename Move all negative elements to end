@@ -1,0 +1,19 @@
+void segregateElements(int arr[],int n)
+    {
+        //this is the code if order is not important
+        int i=0,j=n-1;
+        
+        while(i<j){
+            if(arr[i]>0){
+                i++;
+            }
+            else if(arr[j]<0){
+                j--;
+            }
+            else{
+                swap(arr[i],arr[j]);
+                i++;
+                j--;
+            }
+        }
+    }
